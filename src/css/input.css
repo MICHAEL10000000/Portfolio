@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+.body {
+    background-image: url(../Images/IMG_20231220_105418_876.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+@media screen and (min-width:768px) {
+   .body{
+    background-image: none;
+   }
+}
+.preciseheight{
+    height: 200px;
+}
+.specialImage {
+    border-radius: 41% 59% 70% 30%/ 60% 30% 70% 40%;
+}

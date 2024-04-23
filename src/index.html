@@ -9,9 +9,9 @@
   </head>
   <body>
     <header
-      class="md:bg-Skyblue body px-4 pt-4 text-white pb-32 relative md:pb-16"
+      class="md:bg-Skyblue body px-4 pt-4 text-white pb-32 lg:pb-6 relative md:pb-16"
     >
-      <div class="flex justify-between mb-28 items-center md:mb-4">
+      <div class="flex justify-between mb-28 items-center md:mb-4 lg:px-10">
         <p
           class="font-bold text-lg bg-Skyblue px-4 py-1 rounded-full md:bg-white md:text-Skyblue"
         >
@@ -21,9 +21,9 @@
           <img src="./Images/icon-menu.svg" alt="three dots" />
         </div>
       </div>
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center lg:gap-8">
         <img
-          src="./Images/IMG_20231220_105418_876.jpg"
+          src="./Images/cropped.jpg"
           alt=""
           class="hidden md:inline specialImage w-1/3"
         />
@@ -33,43 +33,56 @@
             A Frontend developer
           </h1>
           <p class="message font-RobotoRegular leading-4 mt-3 md:text-lg">
-            Passionate about creating beautiful and functional websites
+            "I am passionate about creating beautiful and functional websites"
           </p>
         </div>
       </div>
     </header>
     <section
       id="about"
-      class="about py-4 px-4 font-RobotoRegular font-semibold"
+      class="about lg:flex items-center mt-4 justify-center gap-10 xl:gap-28 py-4 px-4 font-RobotoRegular font-medium lg:px-10"
     >
-      <h1
-        class="text-2xl font-Roboto-B pb-1 mb-2 border-b border-solid border-black firstSection"
-      >
-        About
-      </h1>
-      <!-- underline w-full block -->
-      Hi, I am Omilani Gbenga a front end developer. I am passionate about
-      helping businesses create functional website that will enable them create
-      an online presence, get orders from client and show their works to the
-      world
-      <p class="mt-4">
-        <span class="text-lg font-RobotoMedium">My Skills: </span>I have
-        proficient skills in Semantic HTML, CSS, Javascript, Tailwind CSS and
-        Reactjs. This bundle of Skill help me complete my Projects faster so as
-        my client you can guarantee an ontime delivery
-      </p>
-      <p class="mt-4">
-        <span class="text-lg font-RobotoMedium"
-          >My Education and Work Experience</span
+      <div class="abouttxt">
+        <h1
+          class="text-2xl font-Roboto-B pb-1 mb-2 border-b border-solid border-black firstSection"
         >
-        I am a self-taught developer with over 7 months horning my skills with
-        challenges at
-        <a href="frontendmentor.io" class="underline text-Skyblue"
-          >frontendmentor.io
-        </a>
-        Frontendmentor.io have helped me build challenges applicable in real
-        world apps.
-      </p>
+          About
+        </h1>
+        <!-- underline w-full block -->
+        Hi, I am Omilani Gbenga a front end developer. I am passionate about
+        helping businesses create functional website that will enable them
+        create an online presence, get orders from client and show their works
+        to the world
+        <p class="mt-4">
+          <span class="text-lg font-RobotoMedium">My Skills: </span>I have
+          proficient skills in Semantic HTML, CSS, Javascript, Tailwind CSS and
+          Reactjs. This bundle of Skill help me complete my Projects faster so
+          as my client you can guarantee an ontime delivery
+        </p>
+        <p class="mt-4">
+          <span class="text-lg font-RobotoMedium"
+            >My Education and Work Experience</span
+          >
+          I am a self-taught developer with lots of experience. Having horned my
+          skills with challenges from
+          <!-- with over -->
+          <!-- 7 months horning my skills with -->
+          <!-- challenges at -->
+          <a href="frontendmentor.io" class="underline text-Skyblue"
+            >frontendmentor.io
+          </a>
+          , I have grown proficient in my skills. Frontendmentor.io have helped
+          me build challenges applicable in real world apps and I am confident
+          that I am able to build you that website of your dream.
+        </p>
+      </div>
+      <div class="">
+        <img
+          src="./Images/libImage.jpg"
+          alt=""
+          class="aboutImg rounded-lg border-black border md:w-72"
+        />
+      </div>
     </section>
     <section id="Portfolio" class="Portfolio bg-Skyblue px-4 py-4">
       <h1
@@ -78,7 +91,7 @@
         Portfolio
       </h1>
       <div
-        class="flex py-4 flex-col md:flex-row items-center gap-8 font-Roboto-B text-white"
+        class="md:px-8 flex py-4 flex-col md:flex-row items-center gap-8 font-Roboto-B text-white"
       >
         <figure>
           <a href="news-homepage-1dr.pages.dev" class="">
@@ -131,17 +144,19 @@
       </p>
     </section>
     <nav
-      class="text-xl hidden flex-col items-end gap-2 justify-end font-Roboto-B absolute top-0 right-0 pr-4 pb-36 bg-white pl-4 pt-5"
+      class="text-xl hidden flex-col md:block items-end gap-2 justify-end font-Roboto-B absolute top-0 md:top-5 md:right-4 right-0 pr-4 pb-36 bg-white pl-4 pt-5 md:bg-Skyblue md:p-0"
     >
       <div id="close">
         <img
           src="./Images/icon-menu-close.svg"
           alt=""
-          class="flex justify-end"
+          class="flex justify-end md:hidden"
         />
       </div>
 
-      <ol class="flex flex-col pr-16 gap-4">
+      <ol
+        class="flex flex-col pr-16 gap-4 md:flex md:gap-8 md:flex-row md:text-white"
+      >
         <li class="hover:underline"><a href="#">Home</a></li>
         <li class="hover:underline"><a href="#about">About</a></li>
         <li class="hover:underline"><a href="#Portfolio">Portfolio</a></li>

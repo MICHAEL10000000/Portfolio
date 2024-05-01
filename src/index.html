@@ -91,9 +91,9 @@
         Portfolio
       </h1>
       <div
-        class="md:px-8 flex py-4 items-start whitespace-no-wrap flex-col md:flex-row md:overflow-x-auto gap-8 font-Roboto-B text-white"
+        class="md:px-8 flex py-4 md:items-start md:whitespace-no-wrap flex-col md:flex-row md:overflow-x-auto md:overflow-y-hidden gap-8 font-Roboto-B text-white"
       >
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure>
             <a href="news-homepage-1dr.pages.dev" class="">
               <img src="./Images/NewsPage.jpg" alt="" class="w-full" />
@@ -104,7 +104,7 @@
           </figure>
         </div>
 
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure>
             <a href="newsletter-cu5.pages.dev"
               ><img src="./Images/Newsletter.jpg" alt=" " />
@@ -114,7 +114,7 @@
             >
           </figure>
         </div>
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure class="flex-none">
             <a href="https://michael10000000.github.io/timeTracking/"
               ><img src="./Images/timetracker.jpg" alt="" />
@@ -124,7 +124,7 @@
             >
           </figure>
         </div>
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure>
             <a href="advice-generator-3ky/pages.dev"
               ><img src="./Images/Adviceapp1.jpg" alt="" class="" />
@@ -134,17 +134,17 @@
             >
           </figure>
         </div>
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure class="flex-none">
             <a href="https://michael10000000.github.io/price-component/"
               ><img src="./Images/price-component.jpg" alt="" />
-              <caption>
+              <caption class="text-nowrap">
                 A Price component page
               </caption></a
             >
           </figure>
         </div>
-        <div class="flex-none w-48 h-48 bg-black pt-8">
+        <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure>
             <a href="result-summary-1zq.pages.dev"
               ><img src="./Images/Result.jpg" alt="" class="" />
@@ -157,13 +157,42 @@
       </div>
     </section>
 
-    <section id="Contact" class="bg-black text-white px-4 pb-4">
-      <h1 class="text-2xl font-Roboto-B border-b-2 mb-2">Contact:</h1>
-      <p>
+    <section id="Contact" class="bg-black text-white px-16 pb-4 py-8">
+      <h1 class="text-3xl font-Roboto-B">Contact:</h1>
+      <!--  border-b-2 mb-2 -->
+      <div class="md:ml-32">
+        <form action="Message" class="relative">
+          <div class="mb-2">
+            <label for="Name" id="Name">Name: </label> <br />
+            <input
+              type="text"
+              class="bg-black border-b-2 border-white focus:outline-none w-96"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="email" id="email">email:</label> <br />
+            <input
+              type="text"
+              class="bg-black border-b-2 border-white focus:outline-none w-96"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="Message" id="Message">Message:</label> <br />
+            <input
+              type="text"
+              class="bg-black border-b-2 border-white focus:outline-none w-96"
+            />
+          </div>
+          <button class="bg-Skyblue text-white px-4 py-1 rounded-md">
+            Send
+          </button>
+        </form>
+      </div>
+      <!--  <p>
         <a href="Wa.me/+2349151746608" class="underline"
           >Click on me to send a Message now</a
         >
-      </p>
+      </p> -->
     </section>
     <nav
       class="text-xl hidden flex-col md:block items-end gap-2 justify-end font-Roboto-B absolute top-0 md:top-5 md:right-4 right-0 pr-4 pb-36 bg-white pl-4 pt-5 md:bg-Skyblue md:p-0"

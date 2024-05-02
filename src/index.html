@@ -157,33 +157,46 @@
       </div>
     </section>
 
-    <section id="Contact" class="bg-black text-white px-16 pb-4 py-8">
+    <section id="Contact" class="bg-black text-white md:flex px-16 pb-4 py-8">
       <h1 class="text-3xl font-Roboto-B">Contact:</h1>
       <!--  border-b-2 mb-2 -->
       <div class="md:ml-32">
-        <form action="Message" class="relative">
+        <form
+          class="relative"
+          id="contactform"
+          action="https://formspree.io/f/xyyropdz"
+          method="POST"
+        >
           <div class="mb-2">
             <label for="Name" id="Name">Name: </label> <br />
             <input
+              id="name"
+              name="name"
               type="text"
-              class="bg-black border-b-2 border-white focus:outline-none w-96"
+              class="bg-black border-b-2 border-white focus:outline-none w-64 md:w-96"
             />
           </div>
           <div class="mb-2">
             <label for="email" id="email">email:</label> <br />
             <input
+              id="email"
+              name="email"
               type="text"
-              class="bg-black border-b-2 border-white focus:outline-none w-96"
+              class="bg-black border-b-2 border-white focus:outline-none w-64 md:w-96"
             />
           </div>
           <div class="mb-2">
             <label for="Message" id="Message">Message:</label> <br />
-            <input
-              type="text"
-              class="bg-black border-b-2 border-white focus:outline-none w-96"
-            />
+            <textarea
+              id="message"
+              name="message"
+              class="bg-black border-b-2 border-white focus:outline-none w-64 md:w-96"
+            ></textarea>
           </div>
-          <button class="bg-Skyblue text-white px-4 py-1 rounded-md">
+          <button
+            type="submit"
+            class="bg-Skyblue text-white px-4 py-1 rounded-md"
+          >
             Send
           </button>
         </form>

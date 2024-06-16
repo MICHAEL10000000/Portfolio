@@ -14,15 +14,26 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 .body {
-    background-image: url(../Images/IMG_20231220_105418_876.jpg);
+    background-image: url(../Images/cropped2.0-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
     
   }
+  .services_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 1rem;
+ 
+    place-self: center;
 
-@media screen and (min-width:768px) {
+  }
+
+@media screen and (min-width: 768px) {
    .body{
     background-image: none;
+    background-image: rgb(0 102 255) ;
+   /*  background:linear-gradient(to right, rgb(255, 255, 0) 5%, rgb(0 102 255) ) */
    }
 }
  @media screen and (min-width:1024px) {

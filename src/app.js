@@ -7,7 +7,8 @@ threeDot.addEventListener('click', ()=>{
     navElement.classList.toggle("hidden")
 })
 closeNav.addEventListener('click', ()=> {
-   
+    navElement.classList.toggle("flex")
+    navElement.classList.toggle("hidden")
 })
 allList.forEach(li=> {
     li.addEventListener("click", ()=>{

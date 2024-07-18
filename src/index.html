@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Omilani Gbenga Frontend developer Website developer design">
     <meta name="description" content="I am Omilani Gbenga a Frontend Website developer. I am passionate to create beautiful, responsive and functional websites">
@@ -11,35 +11,48 @@
   </head>
   <body>
     <header
-      class="md:bg-Skyblue body px-4 pt-4 text-white pb-32 lg:pb-6 relative md:pb-16"
+      class="md:bg-Skyblue text-white lg:pb-6 relative md:pb-16"
     >
-      <div class="flex justify-between mb-28 items-center md:mb-0 lg:px-10">
+      <div class="flex px-4 py-2 justify-between items-center md:mb-0 lg:px-10">
         <p
           class="font-bold text-lg bg-Skyblue px-4 py-1 rounded-full md:bg-white md:text-Skyblue"
         >
           G.O.M
         </p>
-        <div id="threedot">
+        <div id="threedot" class="md:hidden">
           <img src="./Images/icon-menu.svg" alt="three dots" />
         </div>
+        <section class="desktop-nav hidden md:block pr-8">
+          <ol
+          class="flex flex-col gap-4 md:flex md:gap-8 md:flex-row text-white text-xl font-Roboto-B"
+        >
+            <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#">Home</a></li>
+            <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#about">About</a></li>
+            <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#Contact">Contact</a></li>
+        </ol>
+        </section>
       </div>
-      <div class="flex items-center justify-center lg:gap-8">
+      <div class="pb-28 pt-40 mx-2 rounded-md  body">
+        <div class="flex items-center justify-center lg:gap-8">
         <img
           src="./Images/cropped2.0-removebg-preview.png"
           alt=""
           style="width: 40%"
           class="hidden md:inline specialImage "
         />
-        <div class="text-center">
-          <p class="font-RobotoMedium md:text-xl md:text-yellow-200 ">Hello, I am Omilani Gbenga</p>
-          <h1 class="text-2xl  text-nowrap font-Roboto-B leading-4 md:text-4xl lg:text-5xl md:text-yellow-400">
+        <div class="text-center header-text">
+          <p class="font-Roboto-B text-xl md:text-xl md:text-yellow-200 ">Hello, I am Omilani Gbenga</p>
+          <h1 class="text-2xl  text-nowrap font-Roboto-B leading-5 md:text-4xl lg:text-5xl md:text-yellow-400">
             A Frontend Web developer
           </h1>
-          <p class="message font-RobotoMedium leading-4 mt-2 md:text-lg ">
+          <p class="message font-Roboto-B leading-5 mt-2 md:text-lg ">
             "I am passionate about creating beautiful and functional websites"
           </p>
         </div>
       </div>
+      </div>
+      
     </header>
     <!-- <section class="mt-4">
         <h1 class=" text-3xl text-center">Services</h1>
@@ -108,6 +121,16 @@
       <div
         class="md:px-8 flex py-4 md:items-start md:whitespace-no-wrap flex-col md:flex-row md:overflow-x-auto md:overflow-y-hidden gap-8 font-Roboto-B text-white"
       >
+      <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
+        <figure>
+          <a href="https://michael10000000.github.io/Multi-step-form/" class="">
+            <img src="./Images/multi-form.jpg" alt="" class="w-full" />
+            <caption class="">
+              A React Multi-Step form
+            </caption>
+          </a>
+        </figure>
+      </div>
         <div class="flex-none md:w-48 md:h-48 bg-black py-2 px-2 rounded-md">
           <figure>
             <a href="news-homepage-1dr.pages.dev" class="">
@@ -260,28 +283,32 @@
               class="w-10 border border-white rounded-full"
             />
           </a>
+          <a href="#"><img src="" alt="Github"></a>
         </div>
         <p class="text-sm">Mail: divadaforbusiness@gmail.com</p>
       </div>
     </section>
+    <!-- Side bar -->
     <nav
-      class="text-xl hidden flex-col md:block items-end gap-2 justify-end font-Roboto-B absolute top-0 md:top-5 md:right-4 right-0 pr-4 pb-36 bg-white pl-4 pt-5 md:bg-Skyblue md:p-0"
+      class="w-2/3 text-xl hidden flex-col items-start pl-8 gap-2 font-Roboto-B fixed min-h-screen top-0  left-0 pt-5 bg-Skyblue md:p-0"
     >
-      <div id="close">
+    <!-- md:top-5 md:right-4 -->
+      <div id="close" class=" flex justify-end w-full pr-8 mb-4">
         <img
           src="./Images/icon-menu-close.svg"
-          alt=""
+          alt="Close-icon"
           class="flex justify-end md:hidden"
+          width="25px"
         />
       </div>
 
       <ol
-        class="flex flex-col pr-16 gap-4 md:flex md:gap-8 md:flex-row md:text-white"
+        class="flex flex-col gap-4 md:flex md:gap-8 md:flex-row text-white"
       >
-        <li class="hover:underline md:hover:text-yellow-400 md:hover:text-2xl"><a href="#">Home</a></li>
-        <li class="hover:underline md:hover:text-yellow-400 md:hover:text-2xl"><a href="#about">About</a></li>
-        <li class="hover:underline md:hover:text-yellow-400 md:hover:text-2xl"><a href="#Portfolio">Portfolio</a></li>
-        <li class="hover:underline md:hover:text-yellow-400 md:hover:text-2xl"><a href="#Contact">Contact</a></li>
+        <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#">Home</a></li>
+        <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#about">About</a></li>
+        <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="./portfolio.html">Portfolio</a></li>
+        <li class="hover:underline hover:text-yellow-400 hover:text-2xl"><a href="#Contact">Contact</a></li>
       </ol>
     </nav>
     <!--  <p>

@@ -70,3 +70,6 @@
 .portfolio-header{
     background: linear-gradient( to right,  rgb(0 102 255), rgb(250 204 21));
 }
+.main-header-text{
+    font-size: 1.7rem
+}
